@@ -1,0 +1,11 @@
+com\maven_testing\page\SearchStudentPage.class
+com\maven_testing\page\ExaminationPage.class
+com\maven_testing\page\ProgramEnrollmentPage.class
+com\maven_testing\page\ProgramPage.class
+com\maven_testing\page\CourseEnrollmentPage.class
+com\maven_testing\page\StudentPage.class
+com\maven_testing\utility\Utility.class
+com\maven_testing\page\FeesPage.class
+com\maven_testing\page\LoginPage.class
+com\maven_testing\base\Base.class
+com\maven_testing\page\CoursePage.class

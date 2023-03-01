@@ -1,0 +1,9 @@
+com\maven_testing\test\ProgramTest.class
+com\maven_testing\test\ProgramEnrollmentTest.class
+com\maven_testing\test\CourseTest.class
+com\maven_testing\test\StudentTest.class
+com\maven_testing\test\LoginTest.class
+com\maven_testing\test\FeesTest.class
+com\maven_testing\test\SearchStudentTest.class
+com\maven_testing\test\CourseEnrollmentTest.class
+com\maven_testing\test\ExaminationTest.class
