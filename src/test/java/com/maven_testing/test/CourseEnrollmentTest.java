@@ -52,9 +52,9 @@ public class CourseEnrollmentTest extends Base {
 	
 	@Test(priority=3)
 	public void addCourseEnrollment() throws InterruptedException, IOException {
-		ExtentTest test=extent.createTest("getprogramPage");
+		ExtentTest test=extent.createTest("getCourseEnrollmentPage");
 		login.addCourseEnrollment();	
-		test.pass("add Course Enrollment successfully");
+		test.pass("Course Enrollment done successfully");
 	}
 	@AfterTest
 	public void tearDown() {

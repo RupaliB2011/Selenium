@@ -1,5 +1,6 @@
 package com.maven_testing.page;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -62,15 +63,18 @@ public class CourseEnrollmentPage extends Base{
 			
 			public void addCourseEnrollment() throws InterruptedException {
 				addCourseEnrollmentbtn.click();
-				programEnrolementText.clear();
-				programEnrolementText.sendKeys("EDU-ENR-2022-01925");
+//				programEnrolementText.clear();
+				programEnrolementText.sendKeys("EDU-ENR-2023-00283");
+				programEnrolementText.sendKeys(Keys.ENTER);
 				Thread.sleep(1500); 
-				courseText.clear();
+//				courseText.clear();
 				courseText.sendKeys("CRS-02954");
-				Thread.sleep(1500); 
-				courseText.clear();
-				courseEnrolmentDateText.sendKeys("28-01-2023");
-				Thread.sleep(1500); 
+				courseText.sendKeys(Keys.ENTER);
+				Thread.sleep(2000); 
+//				courseText.clear();
+				courseEnrolmentDateText.sendKeys("02-03-2023");
+				courseEnrolmentDateText.sendKeys(Keys.ENTER);
+				Thread.sleep(2000); 
 				saveBtn.click();
 				Thread.sleep(500); 
 				

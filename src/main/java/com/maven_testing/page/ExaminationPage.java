@@ -97,50 +97,50 @@ public class ExaminationPage extends Base{
 	// finalResultDeclaration - FRD
 	
 	
-	@FindBy(xpath="//span[normalize-space()='Final Result Declaration Tool']")
-	WebElement frdBtn;
-	
-	@FindBy(xpath="//span[contains(@data-label,'Add%20Final%20Result%20Declaration')]")
-	WebElement addfrdBtn;
-	
-	@FindBy(xpath="//div[@data-fieldname='program_grade']//input[@role='combobox']")
-	WebElement programGrade_FRDText;
-	
-	
-	@FindBy(xpath="//div[@data-fieldname='programs']//input[@role='combobox']")
-	WebElement program_FRDText;
-	
-	
-	@FindBy(xpath="//div[@data-fieldname='semester']//input[@role='combobox']")
-	WebElement semester_FRDText;
-	
-	
-	@FindBy(xpath="//div[@data-fieldname='grading_scale']//input[@role='combobox']")
-	WebElement gradingScale_FRDText;
-	
-	
-	@FindBy(xpath="//div[@data-fieldname='academic_year']//input[@role='combobox']")
-	WebElement academicYear_FRDText;
-	
-	
-	@FindBy(xpath="//div[@data-fieldname='academic_term']//input[@role='combobox']")
-	WebElement academicTerm_FRDText;
-	
-	
-	@FindBy(xpath="//button[normalize-space()='Get Students']")
-	WebElement getStudent_FRDBtn;
-	
-	
-	@FindBy(xpath="//div[@class='grid-row sortable-chosen']//input[@type='checkbox']")
-	WebElement checkBox_FRD;
-	
-	
-	@FindBy(xpath="//button[@data-label='Save']")
-	WebElement save_FRDBtn;
-	
-	
-	@FindBy(xpath="//div[contains(@class,'form-column col-sm-12')]//form")
-	WebElement doClick;
+//	@FindBy(xpath="//span[normalize-space()='Final Result Declaration Tool']")
+//	WebElement frdBtn;
+//	
+//	@FindBy(xpath="//span[contains(@data-label,'Add%20Final%20Result%20Declaration')]")
+//	WebElement addfrdBtn;
+//	
+//	@FindBy(xpath="//div[@data-fieldname='program_grade']//input[@role='combobox']")
+//	WebElement programGrade_FRDText;
+//	
+//	
+//	@FindBy(xpath="//div[@data-fieldname='programs']//input[@role='combobox']")
+//	WebElement program_FRDText;
+//	
+//	
+//	@FindBy(xpath="//div[@data-fieldname='semester']//input[@role='combobox']")
+//	WebElement semester_FRDText;
+//	
+//	
+//	@FindBy(xpath="//div[@data-fieldname='grading_scale']//input[@role='combobox']")
+//	WebElement gradingScale_FRDText;
+//	
+//	
+//	@FindBy(xpath="//div[@data-fieldname='academic_year']//input[@role='combobox']")
+//	WebElement academicYear_FRDText;
+//	
+//	
+//	@FindBy(xpath="//div[@data-fieldname='academic_term']//input[@role='combobox']")
+//	WebElement academicTerm_FRDText;
+//	
+//	
+//	@FindBy(xpath="//button[normalize-space()='Get Students']")
+//	WebElement getStudent_FRDBtn;
+//	
+//	
+//	@FindBy(xpath="//div[@class='grid-row sortable-chosen']//input[@type='checkbox']")
+//	WebElement checkBox_FRD;
+//	
+//	
+//	@FindBy(xpath="//button[@data-label='Save']")
+//	WebElement save_FRDBtn;
+//	
+//	
+//	@FindBy(xpath="//div[contains(@class,'form-column col-sm-12')]//form")
+//	WebElement doClick;
 	
 	
 	//Initializing the Page Objects:
@@ -210,47 +210,47 @@ public class ExaminationPage extends Base{
 			
 			
 
-			public void finalResultDeclaration() throws InterruptedException {
-				
-				frdBtn.click();
-				Thread.sleep(500);
-				addfrdBtn.click();
-				
-				programGrade_FRDText.click();
-				Thread.sleep(500);
-				programGrade_FRDText.sendKeys("Postgraduate (PG)");
-			
-				program_FRDText.click();
-				Thread.sleep(500);
-				program_FRDText.sendKeys("Physical Education");
-				
-				semester_FRDText.click();
-				Thread.sleep(500);
-				semester_FRDText.sendKeys("Physical Education Semester I");
-				
-				gradingScale_FRDText.click();
-				Thread.sleep(500);
-				gradingScale_FRDText.sendKeys("Examination Grade");
-				
-				academicYear_FRDText.click();
-				Thread.sleep(500);
-				academicYear_FRDText.sendKeys("2023-24");
-				
-				academicTerm_FRDText.sendKeys("2023-24 (SEMESTER-1)");
-				doClick.click();
-				Thread.sleep(1500);
-				
-				getStudent_FRDBtn.click();
-				Thread.sleep(500);
-				
-				checkBox_FRD.click();
-				Thread.sleep(500);
-				save_FRDBtn.click();
-				
-				
-				
-				
-			}
+//			public void finalResultDeclaration() throws InterruptedException {
+//				
+//				frdBtn.click();
+//				Thread.sleep(500);
+//				addfrdBtn.click();
+//				
+//				programGrade_FRDText.click();
+//				Thread.sleep(500);
+//				programGrade_FRDText.sendKeys("Postgraduate (PG)");
+//			
+//				program_FRDText.click();
+//				Thread.sleep(500);
+//				program_FRDText.sendKeys("Physical Education");
+//				
+//				semester_FRDText.click();
+//				Thread.sleep(500);
+//				semester_FRDText.sendKeys("Physical Education Semester I");
+//				
+//				gradingScale_FRDText.click();
+//				Thread.sleep(500);
+//				gradingScale_FRDText.sendKeys("Examination Grade");
+//				
+//				academicYear_FRDText.click();
+//				Thread.sleep(500);
+//				academicYear_FRDText.sendKeys("2023-24");
+//				
+//				academicTerm_FRDText.sendKeys("2023-24 (SEMESTER-1)");
+//				doClick.click();
+//				Thread.sleep(1500);
+//				
+//				getStudent_FRDBtn.click();
+//				Thread.sleep(500);
+//				
+//				checkBox_FRD.click();
+//				Thread.sleep(500);
+//				save_FRDBtn.click();
+//				
+//				
+//				
+//				
+//			}
 			
 
 

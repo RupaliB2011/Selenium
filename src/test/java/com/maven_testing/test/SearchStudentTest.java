@@ -2,6 +2,7 @@ package com.maven_testing.test;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -48,5 +49,9 @@ public class SearchStudentTest extends Base {
 	login.searchStudentTitle();	
 	test.pass("get Student Page successfully");
 	}
-
+	@AfterTest
+	public void tearDown() {
+		extent.flush();
+		driver.close();
+	}
 }

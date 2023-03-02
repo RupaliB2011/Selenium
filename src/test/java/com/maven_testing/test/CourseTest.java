@@ -53,7 +53,7 @@ public class CourseTest  extends Base {
 	public void addCoursePage() throws InterruptedException, IOException {
 		ExtentTest test=extent.createTest("getprogramPage");
 		login.addCourse();	
-		test.pass("add course successfully");
+		test.pass("added course successfully");
 	}
 	@AfterTest
 	public void tearDown() {
