@@ -81,7 +81,6 @@ public class StudentPage extends Base{
 	@FindBy(xpath = "//button[normalize-space()='Cancel']")
 	WebElement pePageText;
 	
-	
 	@FindBy(xpath = "//div[@class='modal fade show']//button[@type='button'][normalize-space()='Yes']")
 	WebElement confirmationPopup;
 	

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.maven_testing.base.Base;
 
-public class ExaminationPage extends Base{
+public class ExaminationDeclarationPage extends Base{
 	
 	
 	@FindBy(id = "login_email")
@@ -144,7 +144,7 @@ public class ExaminationPage extends Base{
 	
 	
 	//Initializing the Page Objects:
-			public ExaminationPage() {
+			public ExaminationDeclarationPage() {
 				PageFactory.initElements(driver, this);
 			}
 

@@ -9,18 +9,18 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.maven_testing.base.Base;
-import com.maven_testing.page.ExaminationPage;
+import com.maven_testing.page.ExaminationDeclarationPage;
 import com.maven_testing.page.LoginPage;
 import com.maven_testing.utility.Utility;
 
-public class ExaminationTest extends Base {
+public class ExaminationDeclarationTest extends Base {
 	
-	ExaminationPage login;
+	ExaminationDeclarationPage login;
 	Utility util;
 	ExtentReports extent = new ExtentReports();
 	ExtentSparkReporter spark = new ExtentSparkReporter("target/Spark.html");
 
-	public ExaminationTest(){
+	public ExaminationDeclarationTest(){
 		super();
 	}
 
@@ -31,7 +31,7 @@ public class ExaminationTest extends Base {
 		spark.config().setDocumentTitle("MyReport");
 		extent.attachReporter(spark);
 		initialization();
-		login = new ExaminationPage();
+		login = new ExaminationDeclarationPage();
 	}	
 
 	@Test(priority=1)
