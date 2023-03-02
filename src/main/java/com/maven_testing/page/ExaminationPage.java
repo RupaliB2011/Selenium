@@ -37,94 +37,62 @@ public class ExaminationPage extends Base{
 	WebElement examNameText;	
 	
 	@FindBy(xpath= "//div[@data-fieldname='academic_year']//input[@role='combobox']")
-	WebElement academicYearText;
-	
+	WebElement academicYearText;	
 	
 	@FindBy(xpath= "//div[@data-fieldname='academic_term']//input[@role='combobox']")
-	WebElement academicTermText;
-	
+	WebElement academicTermText;	
 	
 	@FindBy(xpath= "//input[@data-fieldname='exam_start_date']")
-	WebElement examStartDateText;
-	
+	WebElement examStartDateText;	
 	
 	@FindBy(xpath= "//input[@data-fieldname='exam_end_date']")
-	WebElement examEndDateText;
-	
+	WebElement examEndDateText;	
 	
 	@FindBy(xpath= "//div[@data-fieldname='program_grade']//input[@role='combobox']")
-	WebElement programGradeText;
-	
+	WebElement programGradeText;	
 	
 	@FindBy(xpath= "//div[@data-fieldname='exam_program']//input[@role='combobox']")
 	WebElement examProgramText;
 	
+	//Semester child table
+	@FindBy(xpath= "//div[@data-fieldname='semesters']//div[@class='btn-open-row']")
+	WebElement addSemesterEditBtn;
 	
-	@FindBy(xpath= "//div[@data-fieldname='semesters']//button[@class='btn btn-xs btn-secondary grid-add-row'][normalize-space()='Add Row']")
-	WebElement addExamChildBtn;
+	@FindBy(xpath="//div[@data-fieldname='semester']//div[@class='form-group']//input[@role='combobox']")
+	WebElement addSemesterChildText;	
 	
+	@FindBy(xpath="//button[@class='btn btn-secondary btn-sm pull-right grid-collapse-row']")
+	WebElement childSemesterCollapseBtn;
 	
-	@FindBy(xpath="//div[@class='rows']//div[contains(@class,'col grid-static-col col-xs-10')]")
-	WebElement addExamSemesterText;
+	@FindBy(xpath= "//input[@data-fieldname='examination_date']")
+	WebElement addExamDateText;	
 	
+	@FindBy(xpath= "//input[@data-fieldname='from_time']")
+	WebElement addExamFromTimeText;	
 	
-	@FindBy(xpath= "//input[@placeholder='Courses']")
-	WebElement addExamCourseText;
-	
-	
-	@FindBy(xpath= "//input[@placeholder='Examination Date']")
-	WebElement addExamDateText;
-	
-	
-	@FindBy(xpath= "//input[@placeholder='From Time']")
-	WebElement addExamFromTimeText;
-	
-	
-	@FindBy(xpath= "//input[@placeholder='To Time']")
+	@FindBy(xpath="//input[@data-fieldname='To Time']")
 	WebElement addExamToTimeText;
 	
+	// Course child table
+	@FindBy(xpath="//button[normalize-space()='Get Courses']")
+	WebElement getCourseBtn;
 	
-	@FindBy(xpath= "//input[@data-fieldtype='Float']")
-	WebElement addAttendanceText;
+//	@FindBy(xpath= "//input[@placeholder='Courses']")
+//	WebElement addExamCourseText;	
 	
-	@FindBy(xpath="/html/body/div[1]/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[2]/div/div/div[3]/div[4]/div[2]/div/form/div[6]/div/div[2]/div[1]/select")
-	WebElement feesStatusText;
+	@FindBy(xpath= "//input[contains(@data-fieldname,'minimum_attendance_criteria')]")
+	WebElement addAttendanceCriteriaText;
 	
+	@FindBy(xpath= "//button[normalize-space()='Get Students']")
+	WebElement getStudentBtn;	
 	
-	@FindBy(xpath="//button[@data-label='Save']//span[@class='alt-underline'][normalize-space()='a']")
+	@FindBy(xpath="//select[@class='input-with-feedback form-control ellipsis bold']")
+	WebElement feesStatusText;	
+
+	@FindBy(xpath="//button[@data-label='Save']")
 	WebElement btnSave;
 	
-	// Criteria wise Evaluation tool
 	
-	@FindBy(xpath="//span[normalize-space()='Criteria Wise Evaluation Tool']")
-	WebElement criteriaWiseEvaluationToolBtn;
-	
-	@FindBy(xpath="//div[@id='page-Course Assessment Result Tool']//div[contains(@class,'section-body')]//div[1]//form[1]//div[2]//div[1]//div[2]//div[1]//div[1]//div[1]//input[1]")
-	WebElement addAcademicYearText;
-	
-	@FindBy(xpath="//div[@id='page-Course Assessment Result Tool']//div[contains(@class,'section-body')]//div[1]//form[1]//div[3]//div[1]//div[2]//div[1]//div[1]//div[1]//input[1]")
-	WebElement addAcademicTermText;
-	
-	@FindBy(xpath="//div[@id='page-Course Assessment Result Tool']//div[contains(@class,'form-column col-sm-6')]//div[1]//div[1]//div[2]//div[1]//div[1]//div[1]//input[1]")
-	WebElement addProgramGradeText;
-	
-	@FindBy(xpath="//div[contains(@class,'col-md-12 layout-main-section-wrapper')]//div[contains(@class,'layout-main-section')]//div//div[2]//form[1]//div[2]//div[1]//div[2]//div[1]//div[1]//div[1]//input[1]")
-	WebElement addProgramText;
-	
-	@FindBy(xpath="//div[@id='page-Course Assessment Result Tool']//div[@class='layout-main-section']//div//div[2]//form[1]//div[3]//div[1]//div[2]//div[1]//div[1]//div[1]//input[1]")
-	WebElement addSemesterText;
-	
-	@FindBy(xpath="//div[@id='page-Course Assessment Result Tool']//div[@class='layout-main-section']//div//div[2]//form[1]//div[4]//div[1]//div[2]//div[1]//div[1]//div[1]//input[1]")
-	WebElement addCourseText;
-	
-	@FindBy(xpath="//div[@id='page-Course Assessment Result Tool']//div[7]//div[1]//div[2]//div[1]//div[1]//div[1]//input[1]")
-	WebElement addAssessmentCriteriaText;
-	
-	@FindBy(xpath="//div[@id='page-Course Assessment Result Tool']//button[contains(@data-label,'Save')]")
-	WebElement loginBtnx;
-	
-	@FindBy(xpath="//span[contains(@data-label,'Add%20Criteria%20Wise%20Evaluation')]")
-	WebElement addCriteriaWiseEvaluationBtn;
 	
 	// finalResultDeclaration - FRD
 	
@@ -218,53 +186,29 @@ public class ExaminationPage extends Base{
 				//addExamChildBtn.click();
 //				js.executeScript("arguments[0].scrollIntoView();", addExamSemesterText);
 				js.executeScript("window.scrollTo(0,612)");
-				addExamSemesterText.click();
+				addSemesterEditBtn.click();
 				Thread.sleep(2500);
-				addExamSemesterText.sendKeys("Master of Arts in Education With Specialisation in Tribal Heritage and Tribal Indology Semester I");
+				addSemesterChildText.sendKeys("Master of Arts in Education With Specialisation in Tribal Heritage and Tribal Indology Semester I");
 				Thread.sleep(2500);
-				addExamCourseText.sendKeys("CRS-00141");
+				childSemesterCollapseBtn.click();
+				Thread.sleep(500);
+				getCourseBtn.click();
+				Thread.sleep(500);			
+				
+//				addExamCourseText.sendKeys("CRS-00141");
 				addExamDateText.sendKeys("25-01-2023");
 				addExamFromTimeText.sendKeys("10:00:00");
 				addExamToTimeText.sendKeys("11:00:00");
-				addAttendanceText.sendKeys("80");
+				addAttendanceCriteriaText.sendKeys("80");
+				Thread.sleep(500);
+				getStudentBtn.click();
+				Thread.sleep(500);
 				feesStatusText.sendKeys("Full Paid");
+				Thread.sleep(500);
 				btnSave.click();
 			}
 			
-			public void criteriaWiseEvaluationTool() throws InterruptedException {
-				criteriaWiseEvaluationToolBtn.click();
-				Thread.sleep(500);
-				addAcademicYearText.click();
-				Thread.sleep(500);
-				addAcademicYearText.sendKeys("2023-24");
 			
-				addAcademicTermText.click();
-				Thread.sleep(500);
-				addAcademicTermText.sendKeys("2023-24 (SEMESTER-1)");
-			
-				addProgramGradeText.click();
-				Thread.sleep(500);
-				addProgramGradeText.sendKeys("Postgraduate (PG)");
-			
-				addProgramText.click();
-				Thread.sleep(500);
-				addProgramText.sendKeys("Chemistry (PG)");
-				
-				addSemesterText.click();
-				Thread.sleep(500);
-				addSemesterText.sendKeys("Master of Science in Chemistry With Specialization in Indigenious Knowledge, Science and Technology Semester I");
-			
-				addCourseText.click();				
-				Thread.sleep(500);
-				addCourseText.sendKeys("CRS-01497");
-				Thread.sleep(500);
-				
-				addAssessmentCriteriaText.click();
-				Thread.sleep(500);
-				addAssessmentCriteriaText.sendKeys("End Term Exam");
-				Thread.sleep(500);
-				loginBtn.click();
-			}
 
 			public void finalResultDeclaration() throws InterruptedException {
 				

@@ -30,13 +30,13 @@ public class CourseEnrollmentPage extends Base{
 	@FindBy(xpath="//div[@data-fieldname='program_enrollment']//input[@role='combobox']")
 	WebElement programEnrolementText;	
 	
-	@FindBy(xpath="//div[@class='frappe-control input-max-width has-error']//input[@role='combobox']")
+	@FindBy(xpath="//div[@data-fieldname='course']//input[@role='combobox']")
 	WebElement courseText;
 	
-	@FindBy(xpath="//input[@data-fieldtype='Date']")
+	@FindBy(xpath="//input[@data-fieldname='enrollment_date']")
 	WebElement courseEnrolmentDateText;
 	
-	@FindBy(xpath="//button[@data-label='Save']")
+	@FindBy(xpath="//div[@id='page-Course Enrollment']//button[@data-label='Save']")
 	WebElement saveBtn;
 	
 	

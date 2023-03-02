@@ -27,17 +27,17 @@ public class CoursePage  extends Base{
 	@FindBy(xpath="//span[@data-label='Add%20Course']")
 	WebElement addCourseBtn;
 	
-	@FindBy(xpath="//div[contains(@data-fieldname,'course_name')]//div[contains(@class,'form-group')]//input[contains(@type,'text')]")
+	@FindBy(xpath="//div[@data-fieldname='course_name']//input[@type='text']")
 	WebElement courseNameText;
 	
-	@FindBy(xpath="//div[contains(@data-fieldname,'course_code')]//input[contains(@type,'text')]")
+	@FindBy(xpath="//div[@data-fieldname='course_code']//input[@type='text']")
 	WebElement courseCodeText;
 	
 	
-	@FindBy(xpath="//*[@id=\"page-Course\"]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[2]/div/div/div[3]/div[4]/div/div/form/div/div/div[2]/div[1]/input")
+	@FindBy(xpath="//input[@data-fieldname='year_end_date']")
 	WebElement courseExpiryDateText;
 	
-	@FindBy(xpath="//button[contains(@data-label,'Save')]")
+	@FindBy(xpath="//div[@id='page-Course']//button[@data-label='Save']")
 	WebElement saveCourseBtn;
 	
 	@FindBy(xpath="//div[@data-fieldname='credit_distribution']//div[@class='flex justify-between']")

@@ -1,70 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-01T16:32:32 IST" name="Default suite" finished-at="2023-03-01T16:33:20 IST" duration-ms="47973">
+  <suite started-at="2023-03-02T16:20:23 IST" name="Default suite" finished-at="2023-03-02T16:24:54 IST" duration-ms="270576">
     <groups>
     </groups>
-    <test started-at="2023-03-01T16:32:32 IST" name="Default test" finished-at="2023-03-01T16:33:20 IST" duration-ms="47973">
-      <class name="com.maven_testing.test.StudentTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.maven_testing.test.StudentTest@770d3326]" started-at="2023-03-01T16:32:32 IST" name="setUp" finished-at="2023-03-01T16:32:50 IST" duration-ms="18128" status="PASS">
+    <test started-at="2023-03-02T16:20:23 IST" name="Default test" finished-at="2023-03-02T16:24:54 IST" duration-ms="270576">
+      <class name="com.maven_testing.test.ExaminationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.maven_testing.test.ExaminationTest@503d687a]" started-at="2023-03-02T16:20:23 IST" name="setUp" finished-at="2023-03-02T16:20:34 IST" duration-ms="10824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginMethod()[pri:1, instance:com.maven_testing.test.StudentTest@770d3326]" started-at="2023-03-01T16:32:50 IST" name="loginMethod" finished-at="2023-03-01T16:32:51 IST" duration-ms="718" status="PASS">
+        <test-method signature="loginMethod()[pri:1, instance:com.maven_testing.test.ExaminationTest@503d687a]" started-at="2023-03-02T16:20:34 IST" name="loginMethod" finished-at="2023-03-02T16:20:35 IST" duration-ms="832" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method signature="getMenu()[pri:2, instance:com.maven_testing.test.StudentTest@770d3326]" started-at="2023-03-01T16:32:51 IST" name="getMenu" finished-at="2023-03-01T16:33:02 IST" duration-ms="11366" status="PASS">
+        <test-method signature="menuClick()[pri:2, instance:com.maven_testing.test.ExaminationTest@503d687a]" started-at="2023-03-02T16:20:35 IST" name="menuClick" finished-at="2023-03-02T16:20:50 IST" duration-ms="15540" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getMenu -->
-        <test-method signature="getStudentPage()[pri:3, instance:com.maven_testing.test.StudentTest@770d3326]" started-at="2023-03-01T16:33:02 IST" name="getStudentPage" finished-at="2023-03-01T16:33:03 IST" duration-ms="630" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getStudentPage -->
-        <test-method signature="validRegistrationTest()[pri:4, instance:com.maven_testing.test.StudentTest@770d3326]" started-at="2023-03-01T16:33:03 IST" name="validRegistrationTest" finished-at="2023-03-01T16:33:10 IST" duration-ms="6905" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validRegistrationTest -->
-        <test-method signature="programEnrollment()[pri:5, instance:com.maven_testing.test.StudentTest@770d3326]" started-at="2023-03-01T16:33:10 IST" name="programEnrollment" finished-at="2023-03-01T16:33:20 IST" duration-ms="10194" status="FAIL">
-          <exception class="org.openqa.selenium.NoAlertPresentException">
+        </test-method> <!-- menuClick -->
+        <test-method signature="declareExamination()[pri:3, instance:com.maven_testing.test.ExaminationTest@503d687a]" started-at="2023-03-02T16:20:50 IST" name="declareExamination" finished-at="2023-03-02T16:24:54 IST" duration-ms="243345" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such alert
-  (Session info: chrome=110.0.5481.178)
+              <![CDATA[java.util.concurrent.TimeoutException
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d28980d50a25861d9e15af4b99e448a8, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SOUL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64973/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d28980d50a25861d9e15af4b99e448a8]]>
+Command: [59e890a5330e73f953f68fe6c9a1a548, findElement {using=xpath, value=//input[@data-fieldname='To Time']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SOUL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55354/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 59e890a5330e73f953f68fe6c9a1a548]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=110.0.5481.178)
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d28980d50a25861d9e15af4b99e448a8, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SOUL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64973/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d28980d50a25861d9e15af4b99e448a8
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+Command: [59e890a5330e73f953f68fe6c9a1a548, findElement {using=xpath, value=//input[@data-fieldname='To Time']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SOUL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55354/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 59e890a5330e73f953f68fe6c9a1a548
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1072)
-at com.maven_testing.page.StudentPage.programEnrollment(StudentPage.java:157)
-at com.maven_testing.test.StudentTest.programEnrollment(StudentTest.java:83)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+at com.maven_testing.page.ExaminationPage.decalreExam(ExaminationPage.java:202)
+at com.maven_testing.test.ExaminationTest.declareExamination(ExaminationTest.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,13 +86,19 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 47 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- programEnrollment -->
-      </class> <!-- com.maven_testing.test.StudentTest -->
+        </test-method> <!-- declareExamination -->
+      </class> <!-- com.maven_testing.test.ExaminationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

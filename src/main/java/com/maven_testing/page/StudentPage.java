@@ -1,6 +1,6 @@
 package com.maven_testing.page;
 
-import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -157,24 +157,12 @@ public class StudentPage extends Base{
 				submitBtn.click();
 				Thread.sleep(1000);
 				
-				
-				Alert alert = driver.switchTo().alert();
-		        // Capturing alert message.    
-		        String alertMessage= driver.switchTo().alert().getText();
-		        // Displaying alert message		
-		        System.out.println(alertMessage);	
-		        Thread.sleep(5000);		        		
-		        // Accepting alert		
-		        alert.accept();	
-		        
-		        
-		      
-				
+				confirmationPopup.click();
 				
 				actualProgramEnrollmentText = pePageText.getText();
 				System.out.println(actualProgramEnrollmentText);				
 				Assert.assertEquals(actualProgramEnrollmentText, peText,"Expected and Actual are same");
-				System.out.println("Expected and Actual are same");
+				System.out.println("Program enrollment completed");
 
 			  	
 			}
