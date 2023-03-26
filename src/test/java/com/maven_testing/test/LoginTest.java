@@ -158,9 +158,9 @@ public class LoginTest  extends Base {
      
         
     }
-	@AfterTest
-	public void tearDown() {
-		extent.flush();
-		driver.close();
-	}
+//	@AfterTest
+//	public void tearDown() {
+//		extent.flush();
+//		driver.close();
+//	}
 }

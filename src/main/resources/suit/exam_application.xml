@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.maven_testing.test.SearchStudentTest"/>
+      <class name="com.maven_testing.test.FeesTest"/>
+      <class name="com.maven_testing.test.ExaminationDeclarationTest"/>
+      <class name="com.maven_testing.test.CourseEnrollmentTest"/>
+      <class name="com.maven_testing.test.ProgramTest"/>
+      <class name="com.maven_testing.test.StudentTest"/>
+      <class name="com.maven_testing.test.CriteriaWiseEvaluationToolTest"/>
+      <class name="com.maven_testing.test.DemoTest"/>
+      <class name="com.maven_testing.test.LoginTest"/>
+      <class name="com.maven_testing.test.ProgramEnrollmentTest"/>
+      <class name="com.maven_testing.test.ExamApplicationTest"/>
+      <class name="com.maven_testing.test.CourseTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
