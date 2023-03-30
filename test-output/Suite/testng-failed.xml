@@ -3,14 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.maven_testing.test.GetProgramTest">
+      <class name="com.maven_testing.test.StudentTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="validRegistrationTest"/>
           <include name="setUp"/>
-          <include name="loginMethod"/>
-          <include name="getProgram"/>
+          <include name="programEnrollment"/>
         </methods>
-      </class> <!-- com.maven_testing.test.GetProgramTest -->
+      </class> <!-- com.maven_testing.test.StudentTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

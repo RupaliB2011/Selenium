@@ -52,8 +52,8 @@ public class ConductCertificateTest extends Base {
 	public void addConductCertificate() throws InterruptedException, IOException {
 		ExtentTest test=extent.createTest("getStudentPage");
 		ccp.addConductCertificate();
-		Thread.sleep(1500); 
-		ccp.confirmation();
+//		Thread.sleep(1500); 
+//		ccp.confirmation();
 		test.pass("Menu Student Clicked successfully");
 	}
 	

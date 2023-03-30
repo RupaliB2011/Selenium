@@ -11,8 +11,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.maven_testing.base.Base;
-import com.maven_testing.page.SearchStudentPage;
-import com.maven_testing.page.StudentPage;
+import com.maven_testing.masterPage.SearchStudentPage;
+import com.maven_testing.page.Admission.StudentPage;
 import com.maven_testing.utility.Utility;
 
 public class SearchStudentTest extends Base {

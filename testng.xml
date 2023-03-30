@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+     <!--  <class name="com.maven_testing.test.SearchStudentTest"/>
+      <class name="com.maven_testing.test.Examination.ContinuousEvaluationTest"/>
+      <class name="com.maven_testing.test.Examination.MigrationCertificateToolTest"/>
+      <class name="com.maven_testing.test.Examination.ProvisionalCertificateTest"/>
+      <class name="com.maven_testing.test.Examination.ExamEvaluationTest"/>
+      <class name="com.maven_testing.test.Examination.CumulativeMarksheetTest"/>
+      <class name="com.maven_testing.test.Examination.ContinuousEvaluationToolTest"/>
+      <class name="com.maven_testing.test.CourseTest"/>
+      <class name="com.maven_testing.test.Examination.CriteriaWiseEvaluationToolTest"/>
+      <class name="com.maven_testing.test.Examination.MigrationCertificateTest"/>
+      <class name="com.maven_testing.test.Examination.SemesterWiseFinalExamResultTest"/>
+      <class name="com.maven_testing.test.Examination.StudentAdmitCardTest"/>
+      <class name="com.maven_testing.test.Examination.CriteriawiseEvaluationTest"/>
+      <class name="com.maven_testing.test.Examination.LeavingCertificateToolTest"/>
+      <class name="com.maven_testing.test.Examination.ProvisionalCertificateToolTest"/>
+      <class name="com.maven_testing.test.ProgramEnrollmentTest"/>
+      <class name="com.maven_testing.test.LoginTest"/>
+      <class name="com.maven_testing.test.Examination.ConductCertificateTest"/>
+      <class name="com.maven_testing.test.FeesTest"/>
+      <class name="com.maven_testing.test.Examination.ExamApplicationTest"/>
+      <class name="com.maven_testing.test.Examination.ExaminationDeclarationTest"/>
+      <class name="com.maven_testing.test.StudentTest"/>
+      <class name="com.maven_testing.test.Examination.ConductCertificateToolTest"/>
+      <class name="com.maven_testing.test.Examination.ExamPaperSettingTest"/>
+      <class name="com.maven_testing.test.Examination.SemesterWiseResultDeclarationToolTest"/>
+      <class name="com.maven_testing.test.CourseEnrollmentTest"/>
+      <class name="com.maven_testing.test.StudentGroupTest"/>
+      <class name="com.maven_testing.test.Examination.CumulativeMarksheetToolTest"/>
+      <class name="com.maven_testing.test.ProgramTest"/>
+      <class name="com.maven_testing.test.Examination.LeavingCertificateTest"/>
+      <class name="com.maven_testing.test.DemoTest"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

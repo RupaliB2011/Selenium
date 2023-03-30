@@ -96,23 +96,23 @@ public class ConductCertificateToolPage extends Base{
 		addConductCertificateToolBtn.click();
 		
 		programsText.sendKeys("Psychology (PG)");
-		programsText.sendKeys(Keys.ENTER);
+//		programsText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		
 		academicTermText.sendKeys("2021-22 (SEMESTER 4)");
-		academicTermText.sendKeys(Keys.ENTER);
+//		academicTermText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		academicYearText.sendKeys("2020-21");
-		academicYearText.sendKeys(Keys.ENTER);
+//		academicYearText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		admissionYearText.sendKeys("2020");
-		admissionYearText.sendKeys(Keys.ENTER);
+//		admissionYearText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);	
 		
 		leavingYearText.sendKeys("2022");
-		leavingYearText.sendKeys(Keys.ENTER);
+//		leavingYearText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);	
 		
 		dateText.sendKeys("25-03-2023");
@@ -122,9 +122,9 @@ public class ConductCertificateToolPage extends Base{
 		getStudentBtn.click();
 		Thread.sleep(500); 
 		
-		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
-		attachBtn.sendKeys(Keys.ENTER);
-		Thread.sleep(1500);		
+//		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
+//		attachBtn.sendKeys(Keys.ENTER);
+//		Thread.sleep(1500);		
 		
 		saveBtn.click();
 		Thread.sleep(500);	

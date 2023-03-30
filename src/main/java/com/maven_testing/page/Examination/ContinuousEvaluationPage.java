@@ -91,15 +91,15 @@ public class ContinuousEvaluationPage extends Base{
 	public void addContinuousEvaluation() throws InterruptedException {
 		addContinuousEvaluationBtn.click();
 		studentText.sendKeys("EDU-STU-2023-00099");
-		studentText.sendKeys(Keys.ENTER);
+//		studentText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		
 		courseText.sendKeys("CRS-01646");
-		courseText.sendKeys(Keys.ENTER);
+//		courseText.sendKeys(Keys.ENTER);
 		Thread.sleep(2000); 
 		
 		assessmentCriteriaText.sendKeys("Mid Term Exam");
-		assessmentCriteriaText.sendKeys(Keys.ENTER);
+//		assessmentCriteriaText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500); 
 		
 		getAssessmentBtn.click();

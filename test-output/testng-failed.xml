@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven_testing.test.Examination.ConductCertificateTest">
+      <class name="com.maven_testing.test.Admission.StudentAdmissionTest">
         <methods>
           <include name="setUp"/>
-          <include name="addConductCertificate"/>
+          <include name="addStudentAdmission"/>
         </methods>
-      </class> <!-- com.maven_testing.test.Examination.ConductCertificateTest -->
+      </class> <!-- com.maven_testing.test.Admission.StudentAdmissionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

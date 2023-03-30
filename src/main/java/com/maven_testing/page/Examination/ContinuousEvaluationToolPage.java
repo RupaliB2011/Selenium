@@ -27,10 +27,6 @@ public class ContinuousEvaluationToolPage extends Base{
 	
 	@FindBy(xpath="//span[@class='link-content ellipsis'][normalize-space()='Continuous Evaluation Tool']")
 	WebElement continuousEvaluationToolBtn;
-	
-	
-	@FindBy(xpath= "//span[@data-label='Add%20Continuous%20Evaluation%20Tool']")
-	WebElement addContinuousEvaluationToolBtn;
 
 	@FindBy(xpath="//div[@data-fieldname='academic_year']//input[@role='combobox']")
 	WebElement addAcademicYearText;
@@ -85,18 +81,17 @@ public class ContinuousEvaluationToolPage extends Base{
 	}
 	
 	public void addContinuousEvaluation() throws InterruptedException {
-		addContinuousEvaluationToolBtn.click();
 		
 		addAcademicYearText.sendKeys("2023-24");
-		addAcademicYearText.sendKeys(Keys.ENTER);
+//		addAcademicYearText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		
 		addAcademicTermText.sendKeys("2023-24 (SEMESER 1)");
-		addAcademicTermText.sendKeys(Keys.ENTER);
+//		addAcademicTermText.sendKeys(Keys.ENTER);
 		Thread.sleep(2000); 
 		
 		addProgramGradeText.sendKeys("Postgraduate (PG)");
-		addProgramGradeText.sendKeys(Keys.ENTER);
+//		addProgramGradeText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500); 
 		
 		addProgramText.sendKeys("Botany (PG)");

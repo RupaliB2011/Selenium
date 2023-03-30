@@ -45,14 +45,29 @@ public class ConductCertificatePage extends Base{
 	WebElement leavingYearText;	
 	
 //	@FindBy(xpath= "//button[@data-fieldname='registrar_signature']")
-//	WebElement attachBtn;	
-	
+//	WebElement attachBtn;
+
+//	@FindBy(xpath= "//button[normalize-space()='Upload']")
+//	WebElement uploadBtn;
+
 	@FindBy(xpath="//button[@data-label='Save']")
-	WebElement saveBtn;	
-	
+	WebElement saveBtn;		
 	
 	@FindBy(xpath="//input[@data-fieldname='date']")
 	WebElement lcConfirmationText;
+
+	
+	@FindBy(css=".btn-attach")
+	WebElement attachBtn;
+	
+	@FindBy(css=".mt-2 > .hidden")
+	WebElement uploadPic;
+	
+	@FindBy(css=".btn-modal-primary")
+	WebElement uploadBtn;
+	
+	@FindBy(xpath ="//button[@class='btn btn-modal-close btn-link']")
+	WebElement closeBtn;
 	
 	String lcText = getCurrentDateAndIncrement();	
 	String actualLCPageText;
@@ -62,7 +77,7 @@ public class ConductCertificatePage extends Base{
 		Calendar c = Calendar.getInstance();
 		c.setTime(new Date()); // Using today's date
 		String newDate = sdf.format(c.getTime());
-		System.out.println(newDate);
+		System.out.println("newDate--->"+newDate);
 		return newDate;
 	}
 	
@@ -92,30 +107,33 @@ public class ConductCertificatePage extends Base{
 		addConductCertificateBtn.click();
 		
 		studentText.sendKeys("EDU-STU-2022-00140");
-		studentText.sendKeys(Keys.ENTER);
+//		studentText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		
 		academicYearText.sendKeys("2020-21");
-		academicYearText.sendKeys(Keys.ENTER);
+//		academicYearText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		admissionYearText.sendKeys("2020");
-		admissionYearText.sendKeys(Keys.ENTER);
+//		admissionYearText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		leavingYearText.sendKeys("2022");
-		leavingYearText.sendKeys(Keys.ENTER);
+//		leavingYearText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
-//		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
-//		attachBtn.sendKeys(Keys.ENTER);
-//		Thread.sleep(1500);		
-		
+	    attachBtn.click();
+	    uploadPic.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
+	    uploadBtn.click();
+	    
+		Thread.sleep(500);		
+		closeBtn.click();
 		saveBtn.click();
 		Thread.sleep(1500); 
 				
 	}	
 	public void confirmation() throws InterruptedException {
+		
 		actualLCPageText = lcConfirmationText.getText();
 		System.out.println(actualLCPageText);				
 		Assert.assertEquals(actualLCPageText, lcText,"Expected and Actual are same");

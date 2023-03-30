@@ -1,5 +1,6 @@
 package com.maven_testing.page.Examination;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -73,33 +74,27 @@ public class CriteriaWiseEvaluationToolPage extends Base{
 		public void criteriaWiseEvaluationTool() throws InterruptedException {
 			criteriaWiseEvaluationToolBtn.click();
 			Thread.sleep(500);
-			addAcademicYearText.click();
-			Thread.sleep(500);
-			addAcademicYearText.sendKeys("2023-24");
-		
-			addAcademicTermText.click();
-			Thread.sleep(500);
-			addAcademicTermText.sendKeys("2023-24 (SEMESTER-1)");
-		
-			addProgramGradeText.click();
-			Thread.sleep(500);
-			addProgramGradeText.sendKeys("Postgraduate (PG)");
-		
-			addProgramText.click();
-			Thread.sleep(500);
-			addProgramText.sendKeys("Chemistry (PG)");
 			
-			addSemesterText.click();
-			Thread.sleep(500);
-			addSemesterText.sendKeys("Master of Science in Chemistry With Specialization in Indigenious Knowledge, Science and Technology Semester I");
+			addAcademicYearText.sendKeys("2023-24");
+			Thread.sleep(500);	
 		
-			addCourseText.click();				
-			Thread.sleep(500);
+			addAcademicTermText.sendKeys("2023-24 (SEMESTER-1)");
+			addAcademicTermText.sendKeys(Keys.ENTER);
+			Thread.sleep(500);	
+			
+			addProgramGradeText.sendKeys("Postgraduate (PG)");
+			Thread.sleep(500);	
+			
+			addProgramText.sendKeys("Chemistry (PG)");
+			Thread.sleep(500);	
+			
+			addSemesterText.sendKeys("Master of Science in Chemistry With Specialization in Indigenious Knowledge, Science and Technology Semester I");
+			Thread.sleep(500);	
+			
 			addCourseText.sendKeys("CRS-01497");
 			Thread.sleep(500);
 			
-			addAssessmentCriteriaText.click();
-			Thread.sleep(500);
+			
 			addAssessmentCriteriaText.sendKeys("End Term Exam");
 			Thread.sleep(500);
 			criteriaWiseEvaluationEarnedmarkText.sendKeys("23");

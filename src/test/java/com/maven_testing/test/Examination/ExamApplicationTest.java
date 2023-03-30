@@ -1,17 +1,13 @@
 package com.maven_testing.test.Examination;
 
 import org.testng.annotations.Test;
-
 import java.io.IOException;
-
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.maven_testing.base.Base;
-import com.maven_testing.page.DemoFile;
 import com.maven_testing.page.Examination.ExamApplicationPage;
 import com.maven_testing.utility.Utility;
 

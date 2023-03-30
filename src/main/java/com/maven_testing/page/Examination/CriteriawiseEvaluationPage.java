@@ -112,13 +112,12 @@ public class CriteriawiseEvaluationPage extends Base{
 		Thread.sleep(1500); 
 		
 		earnedMarkText.sendKeys("46");
-		Thread.sleep(1500); 
+		Thread.sleep(500); 
 				
 		
 		saveBtn.click();
 		Thread.sleep(500); 
-		submitBtn.click();
-		Thread.sleep(500); 
+		
 		confirmationBtn.click();
 				
 		
