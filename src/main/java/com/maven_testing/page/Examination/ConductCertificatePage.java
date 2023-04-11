@@ -128,6 +128,7 @@ public class ConductCertificatePage extends Base{
 	    
 		Thread.sleep(500);		
 		closeBtn.click();
+		
 		saveBtn.click();
 		Thread.sleep(1500); 
 				

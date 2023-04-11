@@ -30,6 +30,7 @@ public class SemesterWiseResultDeclarationToolTest extends Base {
 	public void examFinalResultDecalarationTool() throws InterruptedException, IOException {
 		ExtentTest test=extent.createTest("examFinalResultDecalarationTool");
 		swrdt.addFinalResultDecalaration();	
+		Thread.sleep(500);
 		swrdt.confirmation();	
 		test.pass("Final Result Decalaration Tool executed 6successfully");
 	}

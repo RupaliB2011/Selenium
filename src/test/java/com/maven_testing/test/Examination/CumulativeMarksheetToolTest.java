@@ -41,6 +41,7 @@ public class CumulativeMarksheetToolTest extends Base {
 	public void menuClick() throws InterruptedException {
 		ExtentTest test=extent.createTest("Check Login");
 		cmt.clickMenu();
+		cmt.clickCumulativeMarksheetTool();
 		test.pass("menu clicked success");
 	}
 	
@@ -49,7 +50,8 @@ public class CumulativeMarksheetToolTest extends Base {
 		ExtentTest test=extent.createTest("Check Login");
 		cmt.addCumulativeMarksheetTool();
 		Thread.sleep(500);
-//		cmt.confirmation();
+		cmt.confirmation();
+		Thread.sleep(500);
 		test.pass("tool clicked success");
 	}	
 

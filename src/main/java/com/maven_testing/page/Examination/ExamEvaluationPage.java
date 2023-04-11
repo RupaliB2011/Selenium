@@ -57,7 +57,7 @@ public class ExamEvaluationPage extends Base{
 	@FindBy(xpath= "//button[normalize-space()='Login']")
 	WebElement loginBtn;
 	
-	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Exam And Assessment']")
+	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Examination']")
 	WebElement menuExamBtn;
 	
 	//Moderator child table
@@ -118,7 +118,7 @@ public class ExamEvaluationPage extends Base{
 		
 		
 		gradingScaleTxt.sendKeys("Examination Grade");
-//		gradingScaleTxt.sendKeys(Keys.ENTER);
+//		builder.keyDown(Keys.TAB).perform();
 //		builder.keyDown(Keys.TAB).perform();
 		
 		

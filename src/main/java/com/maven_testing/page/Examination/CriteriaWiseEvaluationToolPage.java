@@ -45,7 +45,7 @@ public class CriteriaWiseEvaluationToolPage extends Base{
 		WebElement loginBtn;
 		// Criteria wise Evaluation tool	 
 		
-		@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Exam And Assessment']")
+		@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Examination']")
 		WebElement menuBtn;
 		
 //		@FindBy(xpath="//div[@id='page-Course Assessment Result Tool']//button[@data-label='Save']")

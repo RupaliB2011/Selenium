@@ -40,11 +40,20 @@ public class LeavingCertificatePage extends Base{
 	@FindBy(xpath= "//div[@data-fieldname='date']//input[@type='text']")
 	WebElement dateText;	
 	
-	@FindBy(xpath= "//button[@data-fieldname='registrar_signature']")
-	WebElement attachBtn;	
+	@FindBy(css=".btn-attach")
+	WebElement attachBtn;
+	
+	@FindBy(css=".mt-2 > .hidden")
+	WebElement uploadPic;
+	
+	@FindBy(css=".btn-modal-primary")
+	WebElement uploadBtn;
 	
 	@FindBy(xpath="//button[@data-label='Save']")
 	WebElement saveBtn;	
+	
+	@FindBy(xpath ="//button[@class='btn btn-modal-close btn-link']")
+	WebElement closeBtn;
 	
 	@FindBy(xpath="//button[@data-label='Submit']")
 	WebElement submitBtn;
@@ -82,25 +91,28 @@ public class LeavingCertificatePage extends Base{
 		addLeavingCertificateBtn.click();
 		
 		studentText.sendKeys("EDU-STU-2022-00250");
-		studentText.sendKeys(Keys.ENTER);
+//		studentText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		
 		dateOfAdmissionText.sendKeys("26-11-2020");
-		dateOfAdmissionText.sendKeys(Keys.ENTER);
+//		dateOfAdmissionText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		dateOfLeavingSchoolText.sendKeys("08-07-2022");
-		dateOfLeavingSchoolText.sendKeys(Keys.ENTER);
+//		dateOfLeavingSchoolText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		dateText.sendKeys("08-07-2023");
-		dateText.sendKeys(Keys.ENTER);
-		Thread.sleep(1500);		
+//		dateText.sendKeys(Keys.ENTER);
+		Thread.sleep(1500);	
 		
-		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
-		attachBtn.sendKeys(Keys.ENTER);
-		Thread.sleep(1500);		
 		
+		
+		attachBtn.click();
+	    uploadPic.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
+	    uploadBtn.click();
+		Thread.sleep(500);		
+		closeBtn.click();
 		saveBtn.click();
 		Thread.sleep(500); 
 				

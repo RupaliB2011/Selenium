@@ -44,7 +44,7 @@ public class ContinuousEvaluationPage extends Base{
 	@FindBy(xpath= "//button[normalize-space()='Login']")
 	WebElement loginBtn;
 	
-	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Exam And Assessment']")
+	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Examination']")
 	WebElement menuExamBtn;
 	
 	@FindBy(id = "login_password")

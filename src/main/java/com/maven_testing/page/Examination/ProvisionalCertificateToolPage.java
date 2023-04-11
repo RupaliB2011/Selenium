@@ -29,10 +29,10 @@ public class ProvisionalCertificateToolPage extends Base{
 	WebElement addProvisionalCertificateToolBtn;
 	
 	
-	@FindBy(xpath="//div[@data-fieldname='programs']//input[@role='combobox']")
+	@FindBy(xpath="//div[@class='frappe-control input-max-width']//input[@role='combobox']")
 	WebElement addProgramText;
 	
-	@FindBy(xpath="//div[@data-fieldname='academic_term']//input[@role='combobox']")
+	@FindBy(xpath="//div[@class='frappe-control input-max-width has-error']//input[@role='combobox']")
 	WebElement addAcademicTermText;
 	
 	@FindBy(xpath= "//div[@data-fieldname='place']//input[@type='text']")
@@ -86,11 +86,11 @@ public class ProvisionalCertificateToolPage extends Base{
 		
 		addProvisionalCertificateToolBtn.click();
 		
-		addProgramText.sendKeys("EDU-STU-2021-00200");
+		addProgramText.sendKeys("Anthropology (PG)");
 		addProgramText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		
-		addAcademicTermText.sendKeys("Odisha");
+		addAcademicTermText.sendKeys("2022-23 (SEMESTER 4)");
 		addAcademicTermText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		

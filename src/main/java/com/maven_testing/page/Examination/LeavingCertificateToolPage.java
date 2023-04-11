@@ -110,9 +110,9 @@ public class LeavingCertificateToolPage extends Base{
 		dateOfLeavingSchoolText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);	
 		
-		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
-		attachBtn.sendKeys(Keys.ENTER);
-		Thread.sleep(1500);		
+//		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
+//		attachBtn.sendKeys(Keys.ENTER);
+//		Thread.sleep(1500);		
 		
 		saveBtn.click();
 		Thread.sleep(500); 

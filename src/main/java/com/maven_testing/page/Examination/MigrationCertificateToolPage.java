@@ -35,10 +35,10 @@ public class MigrationCertificateToolPage extends Base{
 	@FindBy(xpath="//div[@data-fieldname='academic_term']//input[@role='combobox']")
 	WebElement addAcademicTermText;
 	
-	@FindBy(xpath="//div[@data-fieldname='academic_year']//input[@role='combobox']")
+	@FindBy(xpath="//input[@class='input-with-feedback form-control']")
 	WebElement academicYearText;
 	
-	@FindBy(xpath="//div[@data-fieldname='acadmic_session']//input[@type='text']")
+	@FindBy(xpath="//div[@data-fieldname='academic_session']//input[@type='text']")
 	WebElement academicSessionText;
 	
 	@FindBy(xpath="//button[@data-fieldname='resistrar_signature']")
@@ -86,29 +86,28 @@ public class MigrationCertificateToolPage extends Base{
 		addMigrationCertificateToolBtn.click();
 		
 		addProgramText.sendKeys("Education (PG)");
-		addProgramText.sendKeys(Keys.ENTER);
+//		addProgramText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		
 		
 		addAcademicTermText.sendKeys("2021-22 (SEMESTER 4)");
-		addAcademicTermText.sendKeys(Keys.ENTER);
+//		addAcademicTermText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		
 		
 		
 		academicYearText.sendKeys("2020-21");
-		academicYearText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		academicSessionText.sendKeys("2020-22");
-		academicSessionText.sendKeys(Keys.ENTER);
+//		academicSessionText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		
-		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
-		attachBtn.sendKeys(Keys.ENTER);
-		Thread.sleep(1500);		
-		
+//		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
+//		attachBtn.sendKeys(Keys.ENTER);
+//		Thread.sleep(1500);		
+//		
 		getStudentBtn.click();
 		Thread.sleep(500); 
 		

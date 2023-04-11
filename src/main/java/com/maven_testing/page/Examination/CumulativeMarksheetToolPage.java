@@ -3,11 +3,14 @@ package com.maven_testing.page.Examination;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.maven_testing.base.Base;
 
 public class CumulativeMarksheetToolPage extends Base{
 		
+	    
+	
 		@FindBy(id = "login_email")
 		WebElement userName;
 	
@@ -58,6 +61,16 @@ public class CumulativeMarksheetToolPage extends Base{
 	
         @FindBy(xpath="//button[@data-label='Save']")
     	WebElement saveBtn;
+        
+        @FindBy(xpath="//button[normalize-space()='Create Cumulative Marksheet']")
+    	WebElement createCumulativeBtn;
+        
+        @FindBy(xpath="//div[@class='msgprint']")
+    	WebElement cmConfirmationText;        
+     
+//        String ccToolText ="Successful";
+        String cmConfirmMsg="Record Created";
+    	String actuaccPageText;
 		
 		//Initializing the Page Objects:
 		public CumulativeMarksheetToolPage() {
@@ -81,38 +94,49 @@ public class CumulativeMarksheetToolPage extends Base{
 		}
 		public void addCumulativeMarksheetTool() throws InterruptedException {
 			addCumulativeMarksheetToolBtn.click();
-			Thread.sleep(500);
-			
-			addProgramText.click();
-			Thread.sleep(500);
-			
-			addCurrentAcademicTermText.sendKeys("2023-24");
+			Thread.sleep(500);			
 		
-			addBranchText.sendKeys("2023-24 (SEMESTER-1)");
+			addBranchText.sendKeys("Botany");
 			Thread.sleep(500);
 			
-			addSchoolOfText.sendKeys("2023-24 (SEMESTER-1)");
+			addSchoolOfText.sendKeys("Botany");
+			Thread.sleep(500);
 		
 			addSpecializationText.sendKeys("Postgraduate (PG)");		
+			Thread.sleep(500);
 			
-			addYearOfAdmissionText.sendKeys("Chemistry (PG)");			
+			addProgramText.sendKeys("Botany (PG)");
+			Thread.sleep(1500);
 			
-			addCompletedOnText.sendKeys("Master of Science in Chemistry With Specialization in Indigenious Knowledge, Science and Technology Semester I");
+			addCurrentAcademicTermText.sendKeys("2023-24 (SEMESER 1)");
+			Thread.sleep(1000);
+			
+			addYearOfAdmissionText.sendKeys("2023-24");			
+			Thread.sleep(500);
+			
+			addCompletedOnText.sendKeys("2024");
+			Thread.sleep(500);
 		
-			addYearOfCompletion.sendKeys("CRS-01497");
+			addYearOfCompletion.sendKeys("2023-24");
 			Thread.sleep(500);
 			
 			getStudentBtn.click();
 			Thread.sleep(500);
 			
-			attachBtn.sendKeys("C:");
-			Thread.sleep(500);
-			
 			saveBtn.click();
 			Thread.sleep(500);
 			
+			createCumulativeBtn.click();
+			Thread.sleep(500);
+			
+			
 		}
 				
-		
+		public void confirmation() throws InterruptedException {
+			actuaccPageText = cmConfirmationText.getText();
+			System.out.println(actuaccPageText);				
+			Assert.assertEquals(actuaccPageText, cmConfirmMsg,"Expected and Actual are same");
+			System.out.println("Exam Evaluation submitted");
+		}
 
 }

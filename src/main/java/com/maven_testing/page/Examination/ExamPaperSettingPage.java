@@ -30,7 +30,7 @@ public class ExamPaperSettingPage extends Base{
 	@FindBy(xpath= "//button[normalize-space()='Login']")
 	WebElement loginBtn;
 	
-	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Exam And Assessment']")
+	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Examination']")
 	WebElement menuExamBtn;	
 	
 	@FindBy(id = "login_password")
@@ -65,13 +65,13 @@ public class ExamPaperSettingPage extends Base{
 		public void addExamPaperSetting() throws InterruptedException {
 			addExamPaperSettingBtn.click();
 			
-			examEvaluationPlanTxt.sendKeys("Botany (PG)");
+			examEvaluationPlanTxt.sendKeys("EXPLN-00018");
 			examEvaluationPlanTxt.sendKeys(Keys.ENTER);
 			Thread.sleep(1500); 
 			courseTxt.sendKeys("CRS-01642");
 			courseTxt.sendKeys(Keys.ENTER);
 			Thread.sleep(2000); 
-			scheduleDateTxt.sendKeys("23-03-2023");
+			scheduleDateTxt.sendKeys("23-08-2023");
 			scheduleDateTxt.sendKeys(Keys.ENTER);
 			Thread.sleep(1500);
 			fromTimeTxt.sendKeys("10:00:00");

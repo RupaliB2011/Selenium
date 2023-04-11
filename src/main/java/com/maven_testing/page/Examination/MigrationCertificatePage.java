@@ -37,8 +37,17 @@ public class MigrationCertificatePage extends Base{
 	WebElement academicSessionText;
 	
 		
-	@FindBy(xpath= "//button[normalize-space()='Attach']")
-	WebElement attachBtn;	
+	@FindBy(css=".btn-attach")
+	WebElement attachBtn;
+	
+	@FindBy(css=".mt-2 > .hidden")
+	WebElement uploadPic;
+	
+	@FindBy(css=".btn-modal-primary")
+	WebElement uploadBtn;
+	
+	@FindBy(xpath ="//button[@class='btn btn-modal-close btn-link']")
+	WebElement closeBtn;
 	
 	@FindBy(xpath="//button[@data-label='Save']")
 	WebElement saveBtn;	
@@ -77,22 +86,21 @@ public class MigrationCertificatePage extends Base{
 		addMigrationCertificateBtn.click();
 		
 		studentText.sendKeys("EDU-STU-2022-00250");
-		studentText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		
 		academicYearText.sendKeys("2021-22");
-		academicYearText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		academicSessionText.sendKeys("2020-22");
-		academicSessionText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
-		
-		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
-		attachBtn.sendKeys(Keys.ENTER);
-		Thread.sleep(1500);		
-		
+		attachBtn.click();
+	    uploadPic.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
+	    uploadBtn.click();
+	    
+		Thread.sleep(500);		
+		closeBtn.click();
+				
 		saveBtn.click();
 		Thread.sleep(500); 
 				

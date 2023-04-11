@@ -1,6 +1,5 @@
 package com.maven_testing.test.Examination;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -9,7 +8,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.maven_testing.base.Base;
-import com.maven_testing.masterPage.LoginPage;
 import com.maven_testing.page.Examination.ExaminationDeclarationPage;
 import com.maven_testing.utility.Utility;
 

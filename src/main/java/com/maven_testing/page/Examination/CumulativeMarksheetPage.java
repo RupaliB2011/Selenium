@@ -26,7 +26,7 @@ public class CumulativeMarksheetPage extends Base{
 	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Examination']")
 	WebElement menuExamBtn;	
 	
-	@FindBy(xpath="//span[@class='link-content ellipsis'][normalize-space()='Cumulative Marksheet']")
+	@FindBy(xpath="//span[normalize-space()='Cumulative Marksheet']")
 	WebElement cumulativeMarksheetBtn;	
 	
 	@FindBy(xpath= "//span[@data-label='Add%20Cumulative%20Marksheet']")
@@ -50,8 +50,17 @@ public class CumulativeMarksheetPage extends Base{
 	@FindBy(xpath="//div[@data-fieldname='year_of_admision']//input[@type='text']")
 	WebElement yearOfAdmissionText;
 
-	@FindBy(xpath="(//button[normalize-space()='Attach'])")
-	WebElement attachBtn;	
+	@FindBy(css=".btn-attach")
+	WebElement attachBtn;
+	
+	@FindBy(css=".mt-2 > .hidden")
+	WebElement uploadPic;
+	
+	@FindBy(css=".btn-modal-primary")
+	WebElement uploadBtn;
+	
+	@FindBy(xpath ="//button[@class='btn btn-modal-close btn-link']")
+	WebElement closeBtn;
 	
 	@FindBy(xpath="//button[@data-label='Save']")
 	WebElement saveBtn;	
@@ -96,6 +105,7 @@ public class CumulativeMarksheetPage extends Base{
 		Thread.sleep(500); 
 		
 		schoolOfText.sendKeys("Tribal Legal Studies & Tribal Rights");
+		schoolOfText.sendKeys(Keys.ENTER);
 		Thread.sleep(500); 
 		
 		specializationText.sendKeys("Tribal Legal Studies & Tribal Rights");
@@ -104,7 +114,12 @@ public class CumulativeMarksheetPage extends Base{
 		yearOfAdmissionText.sendKeys("2020");
 		Thread.sleep(500); 		
 		
-		attachBtn.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
+		attachBtn.click();
+	    uploadPic.sendKeys("C:\\Users\\SOUL\\Pictures\\Documenting-Progress.jpg");
+	    uploadBtn.click();
+	    
+		Thread.sleep(500);		
+		closeBtn.click();
 					
 		saveBtn.click();
 		Thread.sleep(500); 

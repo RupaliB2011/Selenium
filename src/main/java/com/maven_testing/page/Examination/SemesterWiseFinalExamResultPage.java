@@ -26,7 +26,10 @@ public class SemesterWiseFinalExamResultPage extends Base{
 	WebElement getResultBtn;	
 	
 	@FindBy(xpath= "//div[@data-fieldname='grading_scale']//input[@role='combobox']")
-	WebElement gradingScaleText;		
+	WebElement gradingScaleText;
+	
+	@FindBy(xpath= "//div[@data-fieldname='academic_term']//input[@role='combobox']")
+	WebElement academicTermTxt;
 		
 	
 	@FindBy(xpath= "//button[normalize-space()='Login']")
@@ -73,6 +76,10 @@ public class SemesterWiseFinalExamResultPage extends Base{
 		Thread.sleep(1500);
 		
 		semesterText.sendKeys("Master of Science in Botany With Specialization in Comparative Indic Studies and Tribal Science Semester I");
+//		studentText.sendKeys(Keys.ENTER);
+		Thread.sleep(1500);
+		
+		academicTermTxt.sendKeys("2022-23 (SEMESTER 1)");
 //		studentText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 		

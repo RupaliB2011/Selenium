@@ -90,7 +90,8 @@ public class SemesterWiseResultDeclarationToolPage extends Base{
 		Thread.sleep(500); 
 		
 		academicTermText.sendKeys("2023-24 (SEMESER 1)");
-		Thread.sleep(500); 		
+		academicTermText.sendKeys(Keys.ENTER);
+		Thread.sleep(1000); 		
 		
 		getStudentBtn.click();
 		Thread.sleep(500);				

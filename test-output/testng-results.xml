@@ -1,29 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-30T15:23:06 IST" name="Default suite" finished-at="2023-03-30T15:23:27 IST" duration-ms="21301">
+  <suite started-at="2023-04-11T17:59:18 IST" name="Default suite" finished-at="2023-04-11T17:59:55 IST" duration-ms="36619">
     <groups>
     </groups>
-    <test started-at="2023-03-30T15:23:06 IST" name="Default test" finished-at="2023-03-30T15:23:27 IST" duration-ms="21301">
-      <class name="com.maven_testing.test.Admission.StudentAdmissionTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.maven_testing.test.Admission.StudentAdmissionTest@503d687a]" started-at="2023-03-30T15:23:06 IST" name="setUp" finished-at="2023-03-30T15:23:10 IST" duration-ms="4698" status="PASS">
+    <test started-at="2023-04-11T17:59:18 IST" name="Default test" finished-at="2023-04-11T17:59:55 IST" duration-ms="36619">
+      <class name="com.maven_testing.test.Examination.ExamEvaluationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.maven_testing.test.Examination.ExamEvaluationTest@503d687a]" started-at="2023-04-11T17:59:18 IST" name="setUp" finished-at="2023-04-11T17:59:22 IST" duration-ms="4361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginMethod()[pri:1, instance:com.maven_testing.test.Admission.StudentAdmissionTest@503d687a]" started-at="2023-03-30T15:23:10 IST" name="loginMethod" finished-at="2023-03-30T15:23:11 IST" duration-ms="824" status="PASS">
+        <test-method signature="loginMethod()[pri:1, instance:com.maven_testing.test.Examination.ExamEvaluationTest@503d687a]" started-at="2023-04-11T17:59:22 IST" name="loginMethod" finished-at="2023-04-11T17:59:23 IST" duration-ms="875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method signature="getMenuPage()[pri:2, instance:com.maven_testing.test.Admission.StudentAdmissionTest@503d687a]" started-at="2023-03-30T15:23:11 IST" name="getMenuPage" finished-at="2023-03-30T15:23:16 IST" duration-ms="4391" status="PASS">
+        <test-method signature="getMenuPage()[pri:2, instance:com.maven_testing.test.Examination.ExamEvaluationTest@503d687a]" started-at="2023-04-11T17:59:23 IST" name="getMenuPage" finished-at="2023-04-11T17:59:27 IST" duration-ms="3531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMenuPage -->
-        <test-method signature="addStudentAdmission()[pri:3, instance:com.maven_testing.test.Admission.StudentAdmissionTest@503d687a]" started-at="2023-03-30T15:23:16 IST" name="addStudentAdmission" finished-at="2023-03-30T15:23:27 IST" duration-ms="11360" status="PASS">
+        <test-method signature="examApplication()[pri:3, instance:com.maven_testing.test.Examination.ExamEvaluationTest@503d687a]" started-at="2023-04-11T17:59:27 IST" name="examApplication" finished-at="2023-04-11T17:59:55 IST" duration-ms="27815" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62e8e12ec374d6cd7016112d6c4826b1, sendKeysToElement {id=610a7483-704f-4ee4-9469-b72db0bc638a, value=[Ljava.lang.CharSequence;@4a2929a4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\SOUL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50032/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (62e8e12ec374d6cd7016112d6c4826b1)] -> xpath: //div[@data-fieldname='grading_scale']//input[@role='combobox']]
+Session ID: 62e8e12ec374d6cd7016112d6c4826b1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62e8e12ec374d6cd7016112d6c4826b1, sendKeysToElement {id=610a7483-704f-4ee4-9469-b72db0bc638a, value=[Ljava.lang.CharSequence;@4a2929a4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\SOUL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50032/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (62e8e12ec374d6cd7016112d6c4826b1)] -> xpath: //div[@data-fieldname='grading_scale']//input[@role='combobox']]
+Session ID: 62e8e12ec374d6cd7016112d6c4826b1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+at com.maven_testing.page.Examination.ExamEvaluationPage.addExamEvaluation(ExamEvaluationPage.java:120)
+at com.maven_testing.test.Examination.ExamEvaluationTest.examApplication(ExamEvaluationTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addStudentAdmission -->
-      </class> <!-- com.maven_testing.test.Admission.StudentAdmissionTest -->
+        </test-method> <!-- examApplication -->
+      </class> <!-- com.maven_testing.test.Examination.ExamEvaluationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

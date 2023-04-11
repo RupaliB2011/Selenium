@@ -41,6 +41,7 @@ public class CumulativeMarksheetTest extends Base {
 	public void menuClick() throws InterruptedException {
 		ExtentTest test=extent.createTest("Check Login");
 		cmp.clickMenu();
+		cmp.clickCumulativeMarksheet();
 		test.pass("menu clicked success");
 	}
 	

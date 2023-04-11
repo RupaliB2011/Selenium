@@ -64,8 +64,8 @@ public class StudentAdmitCardPage extends Base{
 		
 		addStudentAdmitCardBtn.click();
 		
-		enrollmentNoText.sendKeys("EDU-STU-2022-00250");
-		enrollmentNoText.sendKeys(Keys.ENTER);
+		enrollmentNoText.sendKeys("EDU-ENR-2023-00263");
+//		enrollmentNoText.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);		
 		
 		saveBtn.click();
