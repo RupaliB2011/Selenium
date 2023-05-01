@@ -19,13 +19,13 @@ public class CoursePage extends Base{
 	@FindBy(xpath= "//button[normalize-space()='Login']")
 	WebElement loginBtn;
 	
-	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Admission']")
+	@FindBy(xpath = "//span[@class='sidebar-item-label'][normalize-space()='Admission']")
 	WebElement menuBtn;
 	
 	@FindBy(xpath="//span[@class='link-content ellipsis'][normalize-space()='Courses']")
 	WebElement Coursebtn;	
 	
-	@FindBy(xpath = "//div[@id='page-List/Course/List']//button[@class='btn btn-primary btn-sm primary-action']")
+	@FindBy(xpath = "//span[@data-label='Add%20Course']")
 	WebElement addCourseBtn;
 
 	@FindBy(xpath = "//div[@data-fieldname='course_name']//div[@class='form-group']//input[@type='text']")

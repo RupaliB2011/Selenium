@@ -34,10 +34,8 @@ public class Base {
 	public static void initialization() {
 		
 		WebDriverManager.chromedriver().setup();
-		//WebDriverManager.firefoxdriver().setup();
-//		System.setProperty("webdriver.chrome.driver","D:\\SeleniumInstallation\\chromedriver_win32\\chromedriver.exe");
-		
-//		ChromeOptions option = new ChromeOptions();
+//		  System.setProperty("webdriver.chrome.driver","D:\\SeleniumInstallation\\chromedriver_win32\\chromedriver.exe");		
+//		  ChromeOptions option = new ChromeOptions();
 //        option.addArguments("--remote-allow-origins=*");
 //        WebDriverManager.chromedriver().setup();
 //        driver = new ChromeDriver(option);
@@ -49,7 +47,9 @@ public class Base {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(200,TimeUnit.SECONDS) ;
-		driver.get(prop.getProperty("testUrl"));
+//		driver.get(prop.getProperty("testUrl"));
+//		driver.get(prop.getProperty("prodUrl"));
+		driver.get(prop.getProperty("wscUrl"));
 
 	}
 	

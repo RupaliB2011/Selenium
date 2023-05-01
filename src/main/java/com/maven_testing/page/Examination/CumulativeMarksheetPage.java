@@ -23,7 +23,7 @@ public class CumulativeMarksheetPage extends Base{
 	@FindBy(xpath= "//button[normalize-space()='Login']")
 	WebElement loginBtn;	
 	
-	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Examination']")
+	@FindBy(xpath = "//span[@class='sidebar-item-label'][normalize-space()='Examination']")
 	WebElement menuExamBtn;	
 	
 	@FindBy(xpath="//span[normalize-space()='Cumulative Marksheet']")

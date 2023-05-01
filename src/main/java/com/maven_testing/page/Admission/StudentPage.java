@@ -26,7 +26,7 @@ public class StudentPage extends Base{
 	@FindBy(xpath= "//button[normalize-space()='Login']")
 	WebElement loginBtn;	
 	
-	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Admission']")
+	@FindBy(xpath = "//span[@class='sidebar-item-label'][normalize-space()='Admission']")
 	WebElement menuBtn;
 	
 	@FindBy(xpath="//span[@class='link-content ellipsis'][normalize-space()='Student']")
@@ -41,7 +41,8 @@ public class StudentPage extends Base{
 	@FindBy(xpath="//div[@data-fieldname='student_email_id']//input[@type='text']")
 	WebElement EnterEmailText;
 	
-	
+	@FindBy(xpath="//div[@data-fieldname='student_email_id']//input[@type='text']")
+	WebElement emailNotificationClose;
 	
 	@FindBy(xpath="//div[@data-fieldname='permanant_registration_number']//input[@type='text']")
 	WebElement regText;

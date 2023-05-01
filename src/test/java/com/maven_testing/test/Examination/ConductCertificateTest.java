@@ -2,6 +2,7 @@ package com.maven_testing.test.Examination;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -60,11 +61,11 @@ public class ConductCertificateTest extends Base {
 	
 	
 	
-//	@AfterTest
-//	public void tearDown() {
-//		extent.flush();
-//		driver.close();
-//	}	
+	@AfterTest
+	public void tearDown() {
+		extent.flush();
+		driver.close();
+	}	
 
 
 }

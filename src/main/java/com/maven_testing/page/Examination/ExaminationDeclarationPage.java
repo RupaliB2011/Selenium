@@ -86,7 +86,7 @@ public class ExaminationDeclarationPage extends Base {
 	WebElement loginBtn;	
 	
 	// Exam declaration
-	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Examination']")
+	@FindBy(xpath = "//span[@class='sidebar-item-label'][normalize-space()='Examination']")
 	WebElement menuExamBtn;	
 
 	@FindBy(id = "login_password")

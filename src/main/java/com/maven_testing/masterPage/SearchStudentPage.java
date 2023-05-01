@@ -21,7 +21,7 @@ public class SearchStudentPage extends Base{
 	WebElement loginBtn;
 	
 	
-	@FindBy(xpath = "//div[normalize-space()='Modules']/following-sibling::a/span[normalize-space()='Admission']")
+	@FindBy(xpath = "//span[@class='sidebar-item-label'][normalize-space()='Admission']")
 	WebElement menuBtn;
 	
 	@FindBy(xpath="//span[normalize-space()='Student']")
